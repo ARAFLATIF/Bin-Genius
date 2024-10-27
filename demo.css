@@ -1,0 +1,55 @@
+/* General Body Styles */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    font-family: Arial, sans-serif; /* Modern font */
+    color: #333; /* Darker text color for better contrast */
+}
+
+/* Card Styles */
+.card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Card Title Styles */
+.card-title {
+    font-weight: bold; /* Bold title */
+    font-size: 1.5rem; /* Larger font size */
+    color: #007bff; /* Primary color */
+}
+
+/* Progress Bar Styles */
+.progress {
+    height: 20px; /* Height of the progress bar */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.progress-bar {
+    border-radius: 10px; /* Rounded corners for progress fill */
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 20px; /* Rounded button */
+}
+
+.btn-outline-primary {
+    color: #007bff; /* Primary color for text */
+    border-color: #007bff; /* Primary color for border */
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff; /* Background on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Centering the Card */
+.card-body {
+    text-align: center; /* Centered text for card content */
+}
