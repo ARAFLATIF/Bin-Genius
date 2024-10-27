@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards Center</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="rewards.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <!-- Rewards Center Header -->
+    <div class="text-center mb-5">
+        <h2>Rewards Center</h2>
+        <p>Manage your points, redeem rewards, and view your history.</p>
+    </div>
+
+    <!-- Current Points Balance -->
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Current Points Balance</h4>
+                    <p class="display-4 text-primary font-weight-bold">1,250</p>
+                    <p>Points available to redeem rewards!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reward Redemption Options -->
+    <div class="mb-5">
+        <h4 class="mb-3">Redeem Your Points</h4>
+        <div class="row">
+            <!-- Reward Option 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-coffee fa-3x text-secondary mb-3"></i>
+                        <h5 class="card-title">Free Coffee</h5>
+                        <p class="card-text">Redeem 200 points for a free coffee.</p>
+                        <button class="btn btn-primary">Redeem</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Reward Option 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-gift fa-3x text-secondary mb-3"></i>
+                        <h5 class="card-title">Gift Card</h5>
+                        <p class="card-text">Redeem 500 points for a $5 gift card.</p>
+                        <button class="btn btn-primary">Redeem</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Reward Option 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shopping-cart fa-3x text-secondary mb-3"></i>
+                        <h5 class="card-title">Discount Coupon</h5>
+                        <p class="card-text">Redeem 300 points for a 10% discount.</p>
+                        <button class="btn btn-primary">Redeem</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rewards History -->
+    <div>
+        <h4 class="mb-3">Rewards History</h4>
+        <table class="table table-hover shadow-sm">
+            <thead class="thead-light">
+                <tr>
+                    <th>Date</th>
+                    <th>Action</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oct 12, 2024</td>
+                    <td>Earned from Recycling</td>
+                    <td>+100</td>
+                </tr>
+                <tr>
+                    <td>Oct 10, 2024</td>
+                    <td>Redeemed for Coffee</td>
+                    <td>-200</td>
+                </tr>
+                <tr>
+                    <td>Oct 8, 2024</td>
+                    <td>Earned from Recycling</td>
+                    <td>+150</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

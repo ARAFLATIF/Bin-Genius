@@ -1,0 +1,93 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Customization */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Jumbotron Customization */
+.jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+}
+
+.jumbotron .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.jumbotron .lead {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+/* Table Styles */
+.table {
+    background-color: #f8f9fa; /* Light gray background for the table */
+}
+
+.table th {
+    background-color: #343a40; /* Dark background for header */
+    color: white; /* White text for header */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e9ecef; /* Light gray for odd rows */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button Customization */
+.btn-success {
+    background-color: #28a745; /* Customize button color */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darken on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .jumbotron .display-4 {
+        font-size: 2rem; /* Adjust display size for smaller screens */
+    }
+
+    .jumbotron .lead {
+        font-size: 1.1rem; /* Adjust lead size for smaller screens */
+    }
+}

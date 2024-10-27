@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bin Genius</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">User</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Dumpster Status</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">QR Scanner</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Rewards Center</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Driver</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Help & Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="container my-5" id="dashboard">
+        <h2 class="text-center mb-4">User Dashboard</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-chart-line text-success"></i> Waste Disposal Activity</h5>
+                        <p class="card-text">Summary of your waste disposal history.</p>
+                        <a href="#" class="btn btn-success btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-coins text-success"></i> Reward Points</h5>
+                        <p class="card-text">Current points earned for your recycling efforts.</p>
+                        <h4 class="text-success font-weight-bold">1,250</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-bell text-success"></i> Notifications</h5>
+                        <p class="card-text">Stay up-to-date with system alerts and updates.</p>
+                        <div class="notifications">
+                            <div class="notification">
+                                <p>Dumpster near you is 80% full.</p>
+                                <small class="text-muted">2 hours ago</small>
+                            </div>
+                            <div class="notification">
+                                <p>Your recycling rewards have been updated.</p>
+                                <small class="text-muted">1 day ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-th-large text-success"></i> Quick Links</h5>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <a href="#" class="btn btn-outline-success btn-block">Dumpster Status</a>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <a href="#" class="btn btn-outline-success btn-block">QR Scanner</a>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <a href="#" class="btn btn-outline-success btn-block">Rewards Center</a>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <a href="#" class="btn btn-outline-success btn-block">Notification Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard - Bin Genius</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="driver-dashboard.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="#">Bin Genius</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="driverDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Driver
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="driverDropdown">
+                        <a class="dropdown-item" href="#">Driver Interface</a>
+                        <a class="dropdown-item" href="#">Route Optimization</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help & Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron jumbotron-fluid text-white bg-success">
+        <div class="container text-center">
+            <h1 class="display-4">Driver Dashboard</h1>
+            <p class="lead">Manage your routes and optimize your performance.</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Overview Card -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title">Overview</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><strong>Total Routes Today:</strong> 5</p>
+                        <p class="card-text"><strong>Total Distance Covered:</strong> 50 km</p>
+                        <p class="card-text"><strong>Bins Collected:</strong> 15</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Route Optimization Card -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="card-title">Route Optimization</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Optimize your collection routes for better efficiency.</p>
+                        <a href="#" class="btn btn-success">Optimize Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Summary Card -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="card-title">Performance Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><strong>Average Rating:</strong> 4.8/5</p>
+                        <p class="card-text"><strong>Fuel Efficiency:</strong> 15 km/l</p>
+                        <p class="card-text"><strong>Rewards Earned:</strong> 200 Points</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Route List Section -->
+        <h2 class="text-center mb-4">Today's Routes</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Route</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Distance (km)</th>
+                    <th scope="col">Bins Collected</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Route A</td>
+                    <td>Completed</td>
+                    <td>10</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Route B</td>
+                    <td>In Progress</td>
+                    <td>15</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Route C</td>
+                    <td>Pending</td>
+                    <td>20</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Bin Genius. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="Bin-Genius.js"></script>
+</body>
+</html>
