@@ -8,37 +8,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="demo.css">
     <style>
-        /* Additional styles for the vertical progress bar */
         .vertical-progress {
             width: 30px;
             height: 100px;
-            background-color: #e0e0e0; /* Light grey background */
+            background-color: #e0e0e0; 
             border: 1px solid #ccc;
             position: relative;
-            margin-left: 20px; /* Adjust space between text and progress bar */
+            margin-left: 20px; 
         }
         .vertical-progress-bar {
             width: 100%;
             position: absolute;
-            bottom: 0; /* Start from the bottom */
-            transition: height 0.5s; /* Smooth transition */
+            bottom: 0; 
+            transition: height 0.5s; 
         }
-        /* Styles for pie charts */
         .chart-container {
-            width: 200px; /* Width of the pie chart */
-            height: 200px; /* Height of the pie chart */
+            width: 200px; 
+            height: 200px; 
             margin: 20px;
         }
     </style>
 </head>
 <body>
 
-<!-- Main Container -->
 <div class="container mt-5 d-flex">
     <div>
         <h2 class="text-center mb-4">ESP32 Dumpster Status</h2>
         
-        <!-- Dumpster Status Card -->
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-dumpster"></i> Dumpster Status</h5>
@@ -51,7 +47,7 @@
             </div>
         </div>
 
-        <!-- Activity Log -->
+
         <div class="mt-4">
             <h5>Recent Activity</h5>
             <ul class="list-group" id="activity-log">
@@ -62,13 +58,13 @@
         </div>
     </div>
 
-    <!-- Vertical Progress Bar -->
+ 
     <div class="vertical-progress">
         <div class="vertical-progress-bar" id="vertical-progress-bar" style="height: 70%; background-color: green;"></div>
     </div>
 </div>
 
-<!-- Pie Charts for Three Bins -->
+
 <div class="container mt-5">
     <h2 class="text-center mb-4">Fill Level Status of Bins</h2>
     <div class="row">
@@ -118,7 +114,6 @@
     </div>
 </div>
 
-<!-- Footer -->
 <footer class="mt-5 text-center">
     <p>&copy; 2024 Dumpster Management System. All rights reserved.</p>
 </footer>
@@ -130,7 +125,6 @@
 <script src="demo.js"></script>
 
 <script>
-// JavaScript code to dynamically update the progress bar and pie charts
 document.addEventListener("DOMContentLoaded", function() {
     const verticalProgressBar = document.getElementById('vertical-progress-bar');
     const fillLevelText = document.getElementById('fill-level-text');
@@ -146,7 +140,6 @@ document.addEventListener("DOMContentLoaded", function() {
         { level: 45, name: "Bin 3" }
     ];
 
-    // Function to update pie charts
     function updatePieCharts() {
         bins.forEach((bin, index) => {
             const ctx = document.getElementById(`bin${index + 1}-chart`).getContext('2d');
@@ -156,8 +149,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 datasets: [{
                     data: [level, 100 - level],
                     backgroundColor: [
-                        level <= 50 ? 'green' : level <= 80 ? 'yellow' : 'red', // Filled color based on level
-                        'rgba(128, 128, 128, 0.5)' // Gray for empty part
+                        level <= 50 ? 'green' : level <= 80 ? 'yellow' : 'red', 
+                        'rgba(128, 128, 128, 0.5)' 
                     ],
                     hoverOffset: 4
                 }]
@@ -178,34 +171,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Function to update the progress bar
-    function updateProgressBar(level) {
-        // Update horizontal text progress bar
+    function updateProgressBar(level) 
         fillLevelText.textContent = level + '%';
         modalFillLevel.textContent = level + '%';
-        lastUpdatedText.textContent = new Date().toLocaleTimeString(); // Update last updated time
+        lastUpdatedText.textContent = new Date().toLocaleTimeString(); 
         modalLastUpdated.textContent = new Date().toLocaleTimeString();
 
-        // Calculate height for vertical progress bar (0-100%)
         verticalProgressBar.style.height = level + '%';
 
-        // Change the color of the vertical progress bar based on the fill level
         if (level <= 50) {
-            verticalProgressBar.style.backgroundColor = 'green'; // Green for 0-50%
+            verticalProgressBar.style.backgroundColor = 'green'; 
         } else if (level <= 80) {
-            verticalProgressBar.style.backgroundColor = 'yellow'; // Yellow for 51-80%
+            verticalProgressBar.style.backgroundColor = 'yellow'; 
         } else {
-            verticalProgressBar.style.backgroundColor = 'red'; // Red for above 80%
-            // Trigger action if fill level is above 80%
+            verticalProgressBar.style.backgroundColor = 'red'; 
             alert("Warning: The dumpster is more than 80% full!");
         }
     }
 
-    // Initial updates
-    updateProgressBar(bins[0].level); // Use the first bin's level for the initial display
+    updateProgressBar(bins[0].level); 
     updatePieCharts();
 
-    // Log activities
     bins.forEach((bin) => {
         activityLog.innerHTML += `<li class="list-group-item">Updated ${bin.name} fill level: ${bin.level}%</li>`;
     });
