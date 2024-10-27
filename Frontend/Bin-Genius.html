@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin Genius</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Bin-Genius.css">
+    <style>
+        body {
+            background-color: #e7f1ff; /* Light background color */
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        .main-container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .center-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .center-logo h1 {
+            font-size: 4rem; /* Larger heading */
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff; /* White color for contrast */
+            background: linear-gradient(90deg, #f39c12, #d35400); /* Gradient background */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 10px 20px; /* Padding for the heading */
+            border-radius: 10px; /* Rounded corners for heading */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0); /* Reduced shadow effect */
+        }
+
+        .tagline {
+            font-size: 1.5rem; /* Tagline size */
+            color: #333; /* Darker color for visibility */
+            padding: 15px; /* Padding for the tagline box */
+            border-radius: 8px; /* Rounded corners for the box */
+            background-color: rgba(255, 255, 255, 0.8); /* White background with reduced opacity */
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
+            display: inline-block; /* Make the box fit the content */
+            margin-bottom: 20px; /* Space below tagline */
+        }
+
+        .feature-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
+            border: 1px solid #ddd;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0); /* Reduced shadow on hover */
+        }
+
+        .feature-card h5 {
+            font-size: 1.6rem; /* Increased size for card titles */
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .feature-card p {
+            color: #555; /* Darker text for better visibility */
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .center-logo h1 {
+                font-size: 3rem; /* Responsive size */
+            }
+
+            .tagline {
+                font-size: 1.2rem; /* Responsive tagline size */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container text-center">
+        <!-- Center Logo -->
+        <div class="center-logo">
+            <h1>Bin Genius</h1>
+            <p class="tagline">Waste Less, Collect Smarter: Tech-Driven Recycling for a Greener Future</p>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="feature-container">
+            <div class="feature-card">
+                <h5>Home</h5>
+                <p>Access to login/signup.</p>
+            </div>
+            <div class="feature-card">
+                <h5>Dashboard</h5>
+                <p>Activity summary and rewards.</p>
+            </div>
+            <div class="feature-card">
+                <h5>Status</h5>
+                <p>Real-time fill levels.</p>
+            </div>
+            <div class="feature-card">
+                <h5>QR Scanner</h5>
+                <p>Scan dumpster codes.</p>
+            </div>
+            <div class="feature-card">
+                <h5>Rewards</h5>
+                <p>Manage and redeem rewards.</p>
+            </div>
+            <div class="feature-card">
+                <h5>Notifications</h5>
+                <p>Customize alerts.</p>
+            </div>
+            <div class="feature-card">
+                <h5>Driver</h5>
+                <p>List of dumpsters to collect.</p>
+            </div>
+            <div class="feature-card">
+                <h5>Routes</h5>
+                <p>Optimize collection routes.</p>
+            </div>
+            <div class="feature-card">
+                <h5>Profile</h5>
+                <p>Update your info.</p>
+            </div>
+            <div class="feature-card">
+                <h5>Support</h5>
+                <p>FAQs and contact info.</p>
+            </div>
+            <div class="feature-card">
+                <h5>About</h5>
+                <p>Learn our impact.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Bin Genius. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
